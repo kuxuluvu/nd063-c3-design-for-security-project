@@ -1,0 +1,6 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+The WebAppSG (Security group) has inbound rules open for ports 22, 80 and 5000. It can make the server more vulnerable to exploits.
+# Poor practice 2
+The InstanceRole (IAM role) has full access to any s3 bucket. It should be specific list of resources and actions

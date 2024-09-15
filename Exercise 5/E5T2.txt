@@ -1,0 +1,21 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Regula: https://github.com/fugue/regula
+Terrascan: https://github.com/tenable/terrascan
+
+### Example vulnerability
+Regula: VPC security group rules should not permit ingress from '0.0.0.0/0' to TCP/UDP port 22 (SSH) [High]
+Terrascan:  Security Groups - Unrestricted Specific Ports - (HTTP,80)
+
+##Scan AMI’s or containers for OS vulnerabilities
+Clair: https://github.com/quay/clair
+
+### Example vulnerability
+CVE: https://cve.mitre.org
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config
+
+### Example vulnerability
+EBS Encryption by default is not enabled
